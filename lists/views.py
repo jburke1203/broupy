@@ -1,8 +1,5 @@
-import builtins
-import bottle
-
-app = builtins.app
+from . import app
 
 @app.route('/')
 def index():
-    return bottle.template("<p>Hello, {{name}}<p>", name='World!')
+    return 'Hello World!'
